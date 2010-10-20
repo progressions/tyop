@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{tyop}
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Isaac Priestley"]
@@ -25,7 +25,8 @@ Gem::Specification.new do |s|
      "VERSION",
      "lib/tyop.rb",
      "test/helper.rb",
-     "test/test_tyop.rb"
+     "test/test_tyop.rb",
+     "tyop.gemspec"
   ]
   s.homepage = %q{http://github.com/progressions/tyop}
   s.rdoc_options = ["--charset=UTF-8"]
