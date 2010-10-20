@@ -1,16 +1,20 @@
 module Tyop
-  def typolize
-    original = self
+  LOWERCASE_LETTERS = ('a'..'z').to_a
+  UPPERCASE_LETTERS = ('A'..'Z').to_a
+  LETTERS = LOWERCASE_LETTERS + UPPERCASE_LETTERS
+  
+  def typolize(count=1)
+    original = self.dup
     
     length = original.length
-    a = rand(length)
-    b = rand(length)
     
-    first = original[a]
-    second = original[b]
+    count.times do
+      a = rand(length)
     
-    original[a] = second
-    original[b] = first
+      l = LETTERS.length
+        
+      original[a] = LETTERS[rand(l)]
+    end
     
     original
   end
