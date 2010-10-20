@@ -1,6 +1,12 @@
 = tyop
 
-Description goes here.
+Intentionally adds typos to strings.
+
+gem install tyop
+
+require 'tyop'
+
+"hello what's up".typolize    => "hello wuat's hp"
 
 == Note on Patches/Pull Requests
  
